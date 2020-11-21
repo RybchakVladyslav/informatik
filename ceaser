@@ -1,0 +1,13 @@
+a = "abcdefghijklmnopqrstuvwxyz"
+b = input('Enter a message:')
+key = int(input('Enter a key(number 1-25):'))
+b = b.lower()
+bsecret =''
+for letter in b:
+    position = a.find(letter)
+    newposition = position + key
+    if letter in a :
+        bsecret = bsecret + a[newposition]
+    else:
+        bsecret = bsecret + letter
+    print(bsecret)
