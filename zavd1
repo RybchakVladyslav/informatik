@@ -1,0 +1,14 @@
+a = []
+b = 0
+max = 0
+sum = 0
+while True:
+    b = int(input())
+    if b == 0:
+        print(sum, max)
+        break
+    a.append(b)
+    if max < b:
+        max = b
+    sum += b
+    print(a)
